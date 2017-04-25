@@ -1,0 +1,18 @@
+{
+  "name": "babel-plugin-modules-web-compat",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:matthewp/babel-plugin-modules-web-compat.git",
+  "author": "Matthew Phillips <matthew@matthewphillips.info>",
+  "license": "BSD-2-Clause",
+  "devDependencies": {
+    "babel-core": "^6.24.1",
+    "example": "0.0.0"
+  },
+  "scripts": {
+    "test": "node test/test.js"
+  },
+  "dependencies": {
+    "resolve": "^1.3.3"
+  }
+}
