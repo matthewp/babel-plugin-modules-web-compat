@@ -7,7 +7,7 @@ function webify(path) {
   const { value } = source;
   const isRelative = regexIsRelative.test(value);
 
-  // If it's module compatible, we simply let it pass through.
+  // If it's web compatible, we simply let it pass through.
   if (regexIsCompat.test(value)) {
     return;
   }
