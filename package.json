@@ -12,7 +12,5 @@
   "scripts": {
     "test": "node test/test.js"
   },
-  "dependencies": {
-    "resolve": "^1.3.3"
-  }
+  "dependencies": {}
 }

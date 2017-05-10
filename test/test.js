@@ -9,7 +9,7 @@ const testCases = [
   },
   {
     before: "import foo from 'example'",
-    after: "import foo from './node_modules/example/github.js';"
+    after: "import foo from '../node_modules/example/github.js';"
   }
 ]
 
