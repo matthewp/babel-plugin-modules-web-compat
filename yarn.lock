@@ -177,7 +177,7 @@ esutils@^2.0.2:
   version "2.0.2"
   resolved "https://registry.yarnpkg.com/esutils/-/esutils-2.0.2.tgz#0abf4f1caa5bcb1f7a9d8acc6dea4faaa04bac9b"
 
-example@^0.0.0:
+example@0.0.0:
   version "0.0.0"
   resolved "https://registry.yarnpkg.com/example/-/example-0.0.0.tgz#510cb4d65a9f742ceba236920ec7c508a65954f6"
 
