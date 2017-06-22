@@ -10,7 +10,8 @@ const testCases = [
   {
     before: "import foo from 'example'",
     after: "import foo from './node_modules/example/github.js';",
-    after2: "import foo from '../node_modules/example/github.js';"
+    after2: "import foo from '../node_modules/example/github.js';",
+    after3: "import foo from '../../node_modules/example/github.js';"
   }
 ]
 
@@ -35,3 +36,15 @@ testCases.filter(testCase => testCase.after2)
   assert.equal(result.code, testCase.after2);
 });
 
+// npm package resolution strategy in an org
+testCases.filter(testCase => testCase.after3)
+.forEach(testCase => {
+  const result = babel.transform(testCase.before, {
+    plugins: [ [webify, {
+      packageResolutionStrategy: 'npm',
+      isOrganization: true
+    }] ]
+  });
+
+  assert.equal(result.code, testCase.after3);
+});
