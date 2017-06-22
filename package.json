@@ -1,6 +1,6 @@
 {
   "name": "babel-plugin-modules-web-compat",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "main": "index.js",
   "repository": "git@github.com:matthewp/babel-plugin-modules-web-compat.git",
   "author": "Matthew Phillips <matthew@matthewphillips.info>",
