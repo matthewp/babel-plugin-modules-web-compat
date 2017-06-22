@@ -36,6 +36,20 @@ In your `.babelrc` add:
 }
 ```
 
+To prepare your modules for distribution to npm, it will need to resolve npm dependencies to the parent folder. Use `packageResolutionStrategy` to turn on this behavior:
+
+```json
+{
+  "plugins": [
+    ["modules-web-compat", {
+      "packageResolutionStrategy": "npm"
+    }]
+  ]
+}
+```
+
+Which will add an addition `../` to your npm dependency specifiers.
+
 ## License
 
 BSD 2 Clause
