@@ -1,5 +1,6 @@
 const nodePath = require('path');
 const resolve = require('resolve');
+const nmExp = /node_modules\//;
 
 function isPackageName(str){
   const c = str[0];
@@ -43,6 +44,7 @@ function webify(path, state) {
     if(isOrg) {
       res = '../' + res;
     }
+    res = res.replace(nmExp, '');
   }
 
   path.node.source.value = res;
